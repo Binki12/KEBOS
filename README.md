@@ -2,3 +2,5 @@
 ![git pull](https://github.com/user-attachments/assets/2cc05cd2-2816-4009-ae29-65c2456b3f21)
 ![git-recoverrecover](https://github.com/user-attachments/assets/35e103b0-84ba-4a1b-8d0d-5177883d78d3)
 ![git-add](https://github.com/user-attachments/assets/81be77e7-a4e4-4685-89ae-47a30f9c4650)
+![git-status](https://github.com/user-attachments/assets/6278e196-a725-4eda-ae9d-b59bd367abef)
+![git-rmv](https://github.com/user-attachments/assets/104c2481-4f73-4bce-ac95-b7884468d627)
