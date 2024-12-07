@@ -1,0 +1,62 @@
+import java.util.ArrayList;
+ import java.util.List;
+ import java.util.Random;
+  
+ /* Ein digitaler Würfel, der die Initiative auswürfelt.
+  * Werte liegen zwischen 1-20.
+  * Bestandteil für KEBOS.
+  * aktuelle Gegner : 2
+  * Version: 1.0
+  * @author Paul Sobek 
+  * Email: s86004@beuth-hochschule.de
+  */
+   /*Würfel Klasse 1-20 */
+ public class Wurfel {
+     public static class Wurf {
+         private int min = 1;
+         private int max = 20;
+         private Random random;
+           public Wurf(int min, int max) {             this.min = min;
+            this.max = max;
+             this.random = new Random();
+         }
+  
+         public int roll() {             return random.nextInt(max - min );         }   
+          } /*Gegner Klasse*/     
+         public static class Gegner {         public static class GegnerData  		
+            	public String name 			public int gegnerscore  			public GegnerData()  			 		  
+ 		private GegnerData data = new GegnerData();
+  
+ 		public Gegner(String name) {
+             this.data.name = name;
+            this.data.gegnerscore = 0;
+        }
+        public int rollDice(Wurf dice) {
+                         int roll = dice.roll();
+                         this.data.gegnerscore += roll;
+                         return roll;
+                     }
+              
+                     public String getName() {
+                         return data.name;
+                     }
+              
+                     public int getScore() {
+                         return data.gegnerscore;
+                     }
+                 }
+             /*Main Methode, mit Erstellung einer Liste der ausgewürfelten Gegner*/
+                 
+                 public static void main(String[] args) {
+                     Wurf dice = new Wurf(1, 20);
+                     List<Gegner> gegnerList = new ArrayList<>();
+                     gegnerList.add(new Gegner("Gegner1"));
+                     gegnerList.add(new Gegner("Gegner2"));
+              
+                     for (Gegner gegner : gegnerList) {
+                         int roll = gegner.rollDice(dice);
+                         System.out.println(gegner.getName() + " hat " + roll + " gewürfelt. Initiative: " + gegner.getScore());
+                     }
+                 }
+             }
+            
