@@ -4,3 +4,4 @@
 ![git-add](https://github.com/user-attachments/assets/81be77e7-a4e4-4685-89ae-47a30f9c4650)
 ![git-status](https://github.com/user-attachments/assets/6278e196-a725-4eda-ae9d-b59bd367abef)
 ![git-rmv](https://github.com/user-attachments/assets/104c2481-4f73-4bce-ac95-b7884468d627)
+![merge](https://github.com/user-attachments/assets/9cd5876f-e64b-4814-88f6-1656ef89e1ae)
